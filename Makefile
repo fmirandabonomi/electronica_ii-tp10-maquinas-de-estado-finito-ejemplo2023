@@ -1,6 +1,6 @@
 .PHONY : all receptor_ir wav-receptor_ir programa
 
-all : receptor_ir
+all : wav-receptor_ir
 
 receptor_ir : design.vhd testbench.vhd
 	ghdl -i --std=08 *.vhd
