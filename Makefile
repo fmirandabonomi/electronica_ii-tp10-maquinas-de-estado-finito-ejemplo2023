@@ -6,6 +6,7 @@ receptor_ir : design.vhd testbench.vhd
 	ghdl -i --std=08 *.vhd
 	ghdl -m --std=08 receptor_ir_tb
 	ghdl -r --std=08 receptor_ir_tb
+	ghdl synth --std=08 receptor_ir >/dev/null
 
 wav-receptor_ir :
 	ghdl -i --std=08 *.vhd
